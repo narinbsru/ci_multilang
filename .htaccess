@@ -1,0 +1,10 @@
+AddDefaultCharset utf-8
+# BEGIN 
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /ci_multilang/
+RewriteCond $1 !^(index\.php|images|robots\.txt|css|js)
+
+RewriteRule ^(.*) index.php [L]
+</IfModule>
+# END
