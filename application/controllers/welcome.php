@@ -107,4 +107,8 @@ class Welcome extends CI_Controller {
     public function testinsert(){
         $this->load->view('map/testinsert');
     }
+	
+	public function fotgithub(){
+		echo "this for test GIT";
+	}
 }
